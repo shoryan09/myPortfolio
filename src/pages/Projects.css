@@ -1,0 +1,200 @@
+/* ─── Projects Board Architecture ───────────────────────── */
+.hud-projects {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  min-height: 100vh;
+}
+
+.projects-view {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.projects-view__header {
+  margin-bottom: 80px;
+}
+
+.header-meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.projects-view__header h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.projects-view__subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  text-transform: none;
+}
+
+/* ─── The Board (Grid) ──────────────────────────────────── */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2px; /* Brutalist grid lines */
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+}
+
+.board-tile {
+  background: var(--bg-primary);
+  height: 400px;
+  perspective: 1500px;
+}
+
+.tile-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.board-tile:hover .tile-inner {
+  transform: rotateY(180deg);
+}
+
+.tile-front, .tile-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Front Styling */
+.tile-front {
+  background: var(--bg-secondary);
+  border: 1px solid transparent;
+  transition: border var(--transition-fast);
+}
+
+.board-tile:hover .tile-front {
+  border-color: var(--accent-primary);
+}
+
+.tile-id {
+  font-size: 0.75rem;
+  color: var(--accent-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.tile-title {
+  font-size: 2rem;
+  margin-bottom: auto;
+  color: var(--text-primary);
+}
+
+.tile-tech-preview {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+}
+
+.tile-corner {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.8rem;
+  color: var(--border-subtle);
+}
+
+/* Back Styling */
+.tile-back {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  transform: rotateY(180deg);
+}
+
+.mission-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.mission-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.tile-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: auto;
+}
+
+.tile-tech-stack span {
+  font-size: 0.65rem;
+  padding: 4px 8px;
+  border: 1px solid var(--bg-primary);
+}
+
+.tile-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.tile-btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid var(--bg-primary);
+  transition: all var(--transition-fast);
+}
+
+.tile-btn:hover {
+  background: var(--bg-primary);
+  color: var(--accent-primary);
+}
+
+.tile-btn--primary {
+  background: var(--bg-primary);
+  color: var(--accent-primary);
+}
+
+.tile-btn--primary:hover {
+  background: white;
+  border-color: white;
+  color: var(--bg-primary);
+}
+
+/* Footer info */
+.projects-footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.2em;
+}
+
+/* ─── Media Queries ──────────────────────────────────────── */
+@media (max-width: 900px) {
+  .projects-view { padding: 0 20px; }
+  .board-grid { grid-template-columns: 1fr; }
+  .board-tile { height: 350px; }
+}
+
+@media (max-width: 560px) {
+  .hud-projects { padding-top: 80px; }
+  .tile-front, .tile-back { padding: 24px; }
+  .tile-title { font-size: 1.5rem; }
+}
