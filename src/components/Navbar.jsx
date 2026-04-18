@@ -57,7 +57,7 @@ export default function Navbar() {
 
         {/* HUD Action */}
         <div className="hud-nav__actions">
-          <a href="https://drive.google.com/file/d/1UBvikWyyJ-6xgRibAdHKHa1iiPc3B5Kp/view" target="_blank" rel="noopener noreferrer" className="hud-btn">
+          <a href="https://drive.google.com/file/d/19WjGsCSE_IAiiOVHX9H42WAXP0bRK0Dh/view" target="_blank" rel="noopener noreferrer" className="hud-btn">
             [ ARCHIVE_RESUME ] ↗
           </a>
         </div>
