@@ -28,11 +28,11 @@ const PROJECTS = [
   },
   {
     id: '04',
-    title: 'ANIHUB',
-    mission: 'Anime metadata ingestion engine. AniList API integration.',
-    tech: ['REACT', 'TAILWIND', 'AL_API'],
-    repo: 'https://github.com/shoryan09/AniHub',
-    live: 'https://github.com/shoryan09/AniHub',
+    title: 'GUNNERS_HUB',
+    mission: 'AI-powered Arsenal FC fan hub with live data, RSS news, and RAG-based Q&A.',
+    tech: ['REACT', 'NODE', 'GEMINI', 'PINECONE'],
+    repo: 'https://github.com/shoryan09/arsenalMM',
+    live: 'https://github.com/shoryan09/arsenalMM',
   },
 ];
 
