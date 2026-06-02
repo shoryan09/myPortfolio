@@ -82,7 +82,7 @@ export default function Navbar() {
                )}
             </div>
            ))}
-           <a href="https://drive.google.com/file/d/1UBvikWyyJ-6xgRibAdHKHa1iiPc3B5Kp/view" target="_blank" rel="noopener noreferrer" className="hud-btn hud-drawer__btn">
+           <a href="https://drive.google.com/file/d/1g3Xw97WkYxjoBQQCjkxgWEakeiDmOAoe/view" target="_blank" rel="noopener noreferrer" className="hud-btn hud-drawer__btn">
             [ ARCHIVE_RESUME ]
           </a>
         </div>
