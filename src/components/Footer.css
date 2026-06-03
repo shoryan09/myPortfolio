@@ -1,9 +1,9 @@
-/* ─── HUD Footer Strip ──────────────────────────────────── */
+/* ─── Footer ─────────────────────────────────────────────── */
 .hud-footer {
   width: 100%;
-  padding: 24px 0;
+  padding: 28px 0;
   border-top: 1px solid var(--border-subtle);
-  background: var(--bg-primary);
+  background: transparent;
   position: relative;
   z-index: 10;
 }
@@ -17,33 +17,20 @@
   justify-content: space-between;
 }
 
-.hf-status {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  letter-spacing: 0.1em;
-}
-
-.hf-brand {
-  font-family: 'Spectral', serif;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: var(--text-primary);
-}
-
+.hf-status,
 .hf-meta {
-  font-size: 0.75rem;
-  color: var(--accent-primary);
-  letter-spacing: 0.1em;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: none;
+  color: var(--text-secondary);
 }
 
 /* ─── Media Queries ──────────────────────────────────────── */
 @media (max-width: 760px) {
   .hf-container {
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
     text-align: center;
   }
 }

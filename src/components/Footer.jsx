@@ -25,11 +25,8 @@ export default function Footer() {
         <span className="hf-status text-mono">
           EOF // {year}
         </span>
-        <span className="hf-brand text-sans">
-          Shoryan Roy
-        </span>
         <span className="hf-meta text-mono">
-          [ NEW DELHI, INDIA // {formattedTime} ]
+          [ New Delhi, India // {formattedTime} ]
         </span>
       </div>
     </footer>

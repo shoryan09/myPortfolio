@@ -1,22 +1,27 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import { initLenis } from './lenis';
 import './index.css';
 
 export default function App() {
+  // Single app-level Lenis instance with the standard rAF loop.
+  useEffect(() => {
+    const teardown = initLenis();
+    return () => {
+      if (teardown) teardown();
+    };
+  }, []);
+
   return (
-    <BrowserRouter>
+    <>
       <div className="ambient-bg" aria-hidden="true" />
       <div className="page-wrapper">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <Home />
         <Footer />
       </div>
-    </BrowserRouter>
+    </>
   );
 }
