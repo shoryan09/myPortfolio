@@ -8,6 +8,7 @@ const PROJECTS = [
     id: '01',
     title: 'LinkWork',
     summary: 'A minimalist freelancing platform connecting clients.',
+    stack: ['TypeScript', 'React.js', 'MongoDB', 'Express', 'Socket.IO'],
     repo: 'https://github.com/shoryan09/Linkwork',
   },
   {
@@ -15,6 +16,7 @@ const PROJECTS = [
     title: 'PassX: Password Manager',
     summary:
       'Password Manager. AES encryption interface. Secure offline credential management protocol.',
+    stack: ['React', 'TypeScript', 'Web Crypto API', 'MongoDB', 'Firebase', 'Postman'],
     repo: 'https://github.com/shoryan09/PassX_Final',
   },
   {
@@ -22,6 +24,7 @@ const PROJECTS = [
     title: "Langton's Ant",
     summary:
       'Simulation of emergent complexity using simple cellular automate logic.',
+    stack: ['JavaScript', 'React', 'HTML Canvas'],
     repo: 'https://github.com/shoryan09/langtons-ant',
   },
   {
@@ -29,6 +32,7 @@ const PROJECTS = [
     title: 'Gunners Hub',
     summary:
       'AI-powered Arsenal FC fan hub with live data, RSS news, and RAG-based Q&A.',
+    stack: ['JavaScript', 'React', 'Node.js', 'Express', 'Gemini', 'Pinecone', 'Tailwind CSS'],
     repo: 'https://github.com/shoryan09/arsenalMM',
   },
 ];
@@ -103,6 +107,11 @@ export default function Home() {
               <span className="project__name">{project.title}</span>
               <div className="project__detail">
                 <p className="project__summary">{project.summary}</p>
+                <div className="project__stack">
+                  {project.stack.map((tech) => (
+                    <span className="stack-chip text-mono" key={tech}>{tech}</span>
+                  ))}
+                </div>
                 <a
                   className="project__link text-mono"
                   href={project.repo}

@@ -149,6 +149,24 @@
   margin-bottom: 14px;
 }
 
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+
+.stack-chip {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 4px 9px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  text-transform: none;
+}
+
 .project__link {
   display: inline-block;
   font-size: 0.8rem;
