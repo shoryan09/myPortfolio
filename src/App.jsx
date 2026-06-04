@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import { initLenis } from './lenis';
+import { Analytics } from "@vercel/analytics/react"
 import './index.css';
 
 export default function App() {
