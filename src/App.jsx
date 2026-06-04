@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import { initLenis } from './lenis';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './index.css';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Footer />
       </div>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
