@@ -23,6 +23,7 @@ export default function App() {
         <Home />
         <Footer />
       </div>
+      <Analytics />
     </>
   );
 }
