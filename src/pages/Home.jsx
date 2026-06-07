@@ -97,8 +97,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      {/* ─── Projects ──────────────────────────────────────── */}
+      
       <section id="projects" className="projects" ref={projectsRef}>
         <h2 className="projects__heading">Projects</h2>
         <ul className="projects__list">
@@ -134,7 +133,7 @@ export default function Home() {
           ))}
         </ul>
       </section>
-      
+
       <section className="terminal-contact" id="contact">
         <div className="terminal-box">
           <div className="terminal-header text-mono">
