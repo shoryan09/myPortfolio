@@ -129,17 +129,6 @@ export default function Home() {
                 >
                   GitHub ↗
                 </a>
-                {project.npm && (
-                  <a
-                  className='project__link text-mono'
-                  href={project-npm}
-                  target="_blank"
-                  rel="noopener nonreferrer"
-                  onclick={(e) => e.stopPropagation()}
-                  >
-                  NPM ↗
-                  </a>
-                )}
               </div>
             </li>
           ))}
