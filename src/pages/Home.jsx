@@ -79,7 +79,6 @@ export default function Home() {
 
   return (
     <main className="home">
-      {/* ─── Hero ──────────────────────────────────────────── */}
       <section id="home" className="hero">
         <div className="hero__inner">
           <div className="hero__marker text-mono">
@@ -97,7 +96,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      
+
       <section id="projects" className="projects" ref={projectsRef}>
         <h2 className="projects__heading">Projects</h2>
         <ul className="projects__list">
