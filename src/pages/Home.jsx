@@ -118,15 +118,28 @@ export default function Home() {
                     <span className="stack-chip text-mono" key={tech}>{tech}</span>
                   ))}
                 </div>
-                <a
-                  className="project__link text-mono"
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  GitHub ↗
-                </a>
+                <div className="project__links">
+                  <a
+                    className="project__link text-mono"
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    GitHub ↗
+                  </a>
+                  {project.npm && (
+                    <a
+                      className="project__link text-mono"
+                      href={project.npm}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      npm ↗
+                    </a>
+                  )}
+                </div>
               </div>
             </li>
           ))}
