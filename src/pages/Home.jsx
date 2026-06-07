@@ -6,13 +6,29 @@ import './Home.css';
 const PROJECTS = [
   {
     id: '01',
+    title: 'Contextis',
+    summary: 'Local-first Claude Code analytics platform with a published npm CLI agent for real-time usage tracking and cloud dashboard sync.',
+    stack: ['Next.js', 'Node CLI tools', 'MongoDB', 'BullMQ', 'NextAuth'],
+    repo: 'https://github.com/shoryan09/contextis',
+    npm: 'https://www.npmjs.com/package/contextis',
+  },
+  {
+    id: '02',
+    title: 'Gunners Hub',
+    summary:
+      'AI-powered Arsenal FC fan hub with live data, RSS news, and RAG-based Q&A.',
+    stack: ['JavaScript', 'React', 'Node.js', 'Express', 'Gemini', 'Pinecone', 'Tailwind CSS'],
+    repo: 'https://github.com/shoryan09/arsenalMM',
+  },
+  {
+    id: '03',
     title: 'LinkWork',
     summary: 'A minimalist freelancing platform connecting clients.',
     stack: ['TypeScript', 'React.js', 'MongoDB', 'Express', 'Socket.IO'],
     repo: 'https://github.com/shoryan09/Linkwork',
   },
   {
-    id: '02',
+    id: '04',
     title: 'PassX: Password Manager',
     summary:
       'Password Manager. AES encryption interface. Secure offline credential management protocol.',
@@ -20,20 +36,12 @@ const PROJECTS = [
     repo: 'https://github.com/shoryan09/PassX_Final',
   },
   {
-    id: '03',
+    id: '05',
     title: "Langton's Ant",
     summary:
       'Simulation of emergent complexity using simple cellular automate logic.',
     stack: ['JavaScript', 'React', 'HTML Canvas'],
     repo: 'https://github.com/shoryan09/langtons-ant',
-  },
-  {
-    id: '04',
-    title: 'Gunners Hub',
-    summary:
-      'AI-powered Arsenal FC fan hub with live data, RSS news, and RAG-based Q&A.',
-    stack: ['JavaScript', 'React', 'Node.js', 'Express', 'Gemini', 'Pinecone', 'Tailwind CSS'],
-    repo: 'https://github.com/shoryan09/arsenalMM',
   },
 ];
 
