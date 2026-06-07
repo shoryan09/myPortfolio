@@ -134,8 +134,7 @@ export default function Home() {
           ))}
         </ul>
       </section>
-
-      {/* ─── Terminal Contact (kept as-is) ─────────────────── */}
+      
       <section className="terminal-contact" id="contact">
         <div className="terminal-box">
           <div className="terminal-header text-mono">
