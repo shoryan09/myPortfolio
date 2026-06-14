@@ -92,7 +92,7 @@ export default function Home() {
 
           <p className="hero__sub">
             Building full-stack applications with a focus on performance, clean
-            design, and scalable backend systems.
+            design, and scalable backend systems, while actively contributing to open-source projects.
           </p>
         </div>
       </section>
