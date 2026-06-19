@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import './Home.css';
 
 /* Real project content migrated from the old Projects page.
-   Add an entry here to add a project to the list. */
+Add an entry here to add a project to the list. */
 const PROJECTS = [
   {
     id: '01',
@@ -16,19 +16,27 @@ const PROJECTS = [
     id: '02',
     title: 'Gunners Hub',
     summary:
-      'AI-powered Arsenal FC fan hub with live data, RSS news, and RAG-based Q&A.',
+    'AI-powered Arsenal FC fan hub with live data, RSS news, and RAG-based Q&A.',
     stack: ['JavaScript', 'React', 'Node.js', 'Express', 'Gemini', 'Pinecone', 'Tailwind CSS'],
     repo: 'https://github.com/shoryan09/arsenalMM',
   },
   {
     id: '03',
+    title: "Chess Lens",
+    summary:
+      'Simulation of emergent complexity using simple cellular automate logic.',
+    stack: ['JavaScript', 'React', 'HTML Canvas'],
+    repo: 'https://github.com/shoryan09/langtons-ant',
+  },
+  {
+    id: '04',
     title: 'LinkWork',
     summary: 'A minimalist freelancing platform connecting clients.',
     stack: ['TypeScript', 'React.js', 'MongoDB', 'Express', 'Socket.IO'],
     repo: 'https://github.com/shoryan09/Linkwork',
   },
   {
-    id: '04',
+    id: '05',
     title: 'PassX: Password Manager',
     summary:
       'Password Manager. AES encryption interface. Secure offline credential management protocol.',
@@ -36,7 +44,7 @@ const PROJECTS = [
     repo: 'https://github.com/shoryan09/PassX_Final',
   },
   {
-    id: '05',
+    id: '06',
     title: "Langton's Ant",
     summary:
       'Simulation of emergent complexity using simple cellular automate logic.',
