@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { id: 'contact', label: 'Contact' },
 ];
 
-const RESUME_URL = 'https://drive.google.com/file/d/1Jl2pzElip_lL2vfgwpRBPkwqvuSORJSD/view';
+const RESUME_URL = 'https://drive.google.com/file/d/1B795uZQXjwr7MCm4tSw97pCzD_RQkx33/view';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
